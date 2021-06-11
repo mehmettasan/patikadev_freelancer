@@ -1,0 +1,23 @@
+<%- include('./partials/_header') %>
+    <%- include('./partials/_navbar') %>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" action="/project/add" method="POST" enctype="multipart/form-data">
+                    <div class="form-floating mb-3" style="margin-top: 150px;">
+                        <input type="text" name="title" id="" class="form-control">
+                        <label for="name">Title</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="text" name="description" id="" class="form-control">
+                        <label for="message">Description</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="file" name="image" id="" class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-xl mb-5" id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <%- include('./partials/_footer') %>
