@@ -10,7 +10,6 @@ exports.createProject= async (req, res) => {
       });
       res.redirect('/');
     });
-    res.redirect('/');
   }
 
   exports.updateProject=async (req, res) => {
